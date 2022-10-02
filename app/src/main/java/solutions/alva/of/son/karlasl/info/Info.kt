@@ -1,19 +1,19 @@
 // -----------------------------------------------------------------
 // @copyright    (C) 2022 SoAS
-// @file         MainActivity.kt
+// @file         Info.kt
 // @author       Daniel Alvarez <josamogax@gmail.com>
-// @brief        MainScreenActivity after initialization and splash screen activity
+// @brief        File containing information about the project and authors
 // @details
 // ------------------------------------------------------------------
-
-package solutions.alva.of.son.karlasl
+package solutions.alva.of.son.karlasl.info
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import solutions.alva.of.son.karlasl.R
 
-class MainActivity : AppCompatActivity() {
+class Info : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_info)
     }
 }

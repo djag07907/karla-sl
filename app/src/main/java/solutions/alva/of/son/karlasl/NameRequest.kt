@@ -1,19 +1,18 @@
 // -----------------------------------------------------------------
 // @copyright    (C) 2022 SoAS
-// @file         MainActivity.kt
+// @file         NameRequest.kt
 // @author       Daniel Alvarez <josamogax@gmail.com>
-// @brief        MainScreenActivity after initialization and splash screen activity
+// @brief        Activity that requests the name of the user to be displayed on the app screens
 // @details
 // ------------------------------------------------------------------
-
 package solutions.alva.of.son.karlasl
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class NameRequest : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_name_request)
     }
 }

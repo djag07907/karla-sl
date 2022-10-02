@@ -1,3 +1,10 @@
+// -----------------------------------------------------------------
+// @copyright    (C) 2022 SoAS
+// @file         SplashScreen.kt
+// @author       Daniel Alvarez <josamogax@gmail.com>
+// @brief        Initial activity that shows splash screen when the app starts
+// @details
+// ------------------------------------------------------------------
 package solutions.alva.of.son.karlasl
 
 import android.content.Intent
@@ -12,15 +19,13 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        // This is used to hide the status bar and make
-        // the splash screen as a full screen activity.
+        // This is used to hide the status bar and make the splash screen as a full screen activity
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
+        // Use of postDelayed(Runnable, time) method to send a message with a delayed time.
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
