@@ -2,7 +2,7 @@
 // @copyright    (C) 2022 SoAS
 // @file         SLMainScreen.kt
 // @author       Daniel Alvarez <josamogax@gmail.com>
-// @brief        MainActivity for the Sign Language tools and modules.
+// @brief        MainActivity for the Sign Language tools and modules
 // @details
 // ------------------------------------------------------------------
 package solutions.alva.of.son.karlasl.sign_language
