@@ -12,7 +12,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:contentDescription="@string/logo_image"
-        android:src="@drawable/Karla_SL_Logo5"
+        android:src="@drawable/karlasl_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
