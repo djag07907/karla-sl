@@ -7,6 +7,7 @@
 // ------------------------------------------------------------------
 package solutions.alva.of.son.karlasl
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,6 +20,9 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
+        val sharedPreferences = getSharedPreferences("userName", Context.MODE_PRIVATE)
+
+        val userName = sharedPreferences.getString("UserNameKey", null)
         // This is used to hide the status bar and make the splash screen as a full screen activity
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -27,9 +31,13 @@ class SplashScreen : AppCompatActivity() {
 
         // Use of postDelayed(Runnable, time) method to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            if (userName != null){
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            } else {
+            val intent = Intent(this, NameRequest::class.java)
             startActivity(intent)
-            finish()
+            finish() }
         }, 3000) // 3000 is the delayed time in milliseconds.
     }
 }

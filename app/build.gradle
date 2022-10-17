@@ -1,11 +1,16 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
 }
 
 android {
     namespace 'solutions.alva.of.son.karlasl'
     compileSdk 32
+
+    viewBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "solutions.alva.of.son.karlasl"

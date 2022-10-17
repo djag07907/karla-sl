@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">KARLA SL</string>
     <string name="logo_image">Logo image</string>
+    <string name="welcome_msg">¡Bienvenido(a) a KARLA SL!</string>
+    <string name="welcome_msg2">Ingresa tu nombre y comencemos:</string>
+    <string name="my_name">Mi nombre es:</string>
+    <string name="insert_name">Ingresa tu nombre</string>
+    <string name="save">Guardar y continuar</string>
 </resources>

@@ -6,4 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".NameRequest">
 
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="17dp"
+        android:contentDescription="@string/logo_image"
+        android:src="@drawable/karlasl_logo"
+        app:layout_constraintBottom_toTopOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="@string/welcome_msg"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome2"
+        app:layout_constraintStart_toStartOf="@+id/SplashScreenImage"
+        app:layout_constraintTop_toBottomOf="@+id/SplashScreenImage" />
+
+    <TextView
+        android:id="@+id/welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/welcome_msg2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/my_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextUserName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextUserName"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="179dp"
+        android:ems="9"
+        android:hint="@string/insert_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/saveNameButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/myname"
+        app:layout_constraintTop_toBottomOf="@+id/welcome2" />
+
+    <Button
+        android:id="@+id/saveNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="169dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
