@@ -27,9 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val sharedPreferences = getSharedPreferences("userName",Context.MODE_PRIVATE)
-
         val userName = sharedPreferences.getString("UserNameKey", null)
-
         binding.tvusername.text = userName.toString()
     }
 }
