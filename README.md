@@ -3,7 +3,7 @@
 
 Aplicación de conocimiento para aprender y asistir en Lengua de Señas.
 
-## Desceripción
+## Descripción
 
 Se trata de un aplicación en búsqueda de eliminar barreras comunicativas y de aprendizaje entre oyentes y sordos respecto a la lengua de señas en Honduras. Esto implicando los siguientes objetivos:
 
