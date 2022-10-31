@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KARLASL"
         tools:targetApi="31">
+
         <activity
             android:name=".ProfileInfo"
             android:exported="false">
@@ -20,28 +21,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SLMainScreen"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".QCMainScreen"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".info"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".QuickCommunication"
+            android:name=".info.Info"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -54,6 +34,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".quick_communication.QCMainScreen" />
+        <activity android:name=".quick_communication.TTSScreen" />
+        <activity android:name=".quick_communication.STTScreen" />
+        <activity android:name=".sign_language.SLMainScreen" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"

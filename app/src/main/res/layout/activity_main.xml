@@ -37,12 +37,35 @@
         android:layout_marginStart="54dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="54dp"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_marginBottom="163dp"
+        android:contentDescription="@string/karla_sl_logo"
+        app:layout_constraintBottom_toTopOf="@+id/communicateBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/karlasl_logo"
-        android:contentDescription="@string/karla_sl_logo" />
+        app:srcCompat="@drawable/karlasl_logo" />
+
+    <Button
+        android:id="@+id/communicateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="103dp"
+        android:text="@string/lets_communicate"
+        app:layout_constraintBottom_toTopOf="@+id/learnSLBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/karlasl_logo" />
+
+    <Button
+        android:id="@+id/learnSLBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="149dp"
+        android:text="@string/learnsl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/communicateBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
